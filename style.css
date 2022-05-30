@@ -12,7 +12,7 @@
     text-align: right;
   }
   
-  .title img {
+  .title__img {
     width: 100%;
   }
   
@@ -46,22 +46,24 @@
     display: flex;
   }
   
-  ul {
+  .tasks__task-list {
     margin: 0;
     padding: 0px;
   }
   
-  li,
-  h3 {
+  .tasks__task-list-item,
+  .tasks__action-name {
     list-style: none;
   }
   
-  input,
-  button{
+  .tasks__new-task-input,
+  .tasks__button-task {
     outline: none;
   }
   
-  button {
+  .tasks__button-task,
+  .tasks__button-task_edit,
+  .tasks__button-task_delete {
     background: none;
     border: 0px;
     color: #888;
@@ -71,13 +73,16 @@
     cursor: pointer;
   }
   
-  button:hover {
+  
+  .tasks__button-task:hover,
+  .tasks__button-task_edit:hover,
+  .tasks__button-task_delete:hover {
     color: #3a3a3a;
   }
   
   /* Heading */
-  h3,
-  label[for="tasks__new-task-input"] {
+  .tasks__action-name,
+  .tasks__action-name {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -87,7 +92,7 @@
     text-transform: uppercase;
   }
   
-  input[type="text"] {
+  .tasks__new-task-input_text {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -100,12 +105,12 @@
     color: #888;
   }
   
-  input[type="text"]:focus {
+  .tasks__new-task-input_text:focus {
     color: #333;
   }
   
   /* New Task */
-  label[for="tasks__new-task-input"] {
+  .tasks__action-name-label {
     display: block;
     margin: 0 0 20px;
   }
@@ -116,7 +121,7 @@
   }
   
   /* Task list */
-  li {
+  .tasks__task-list-item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -125,11 +130,11 @@
     align-items: center;
   }
   
-  li > * {
+  .tasks__task-list-item > * {
     vertical-align: middle;
   }
   
-  li > input[type="checkbox"] {
+  .tasks__task-list-item > input[type="checkbox"] {
     margin: 0 10px;
   }
   
@@ -140,11 +145,11 @@
     width: 226px;
   }
   
-  li >    input[type="text"] {
+  li > .tasks__new-task-input_text {
     width: 226px;
   }
   
-  .tasks__button-task_delete img {
+  .tasks__button-task-img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
@@ -173,4 +178,3 @@
   ul li.tasks__task-list-item_edit label {
     display: none;
   }
-  
