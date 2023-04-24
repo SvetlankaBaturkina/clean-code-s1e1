@@ -23,9 +23,9 @@
   
   @media (max-width:768px) {
   
-  .title {
-    text-align: center;
-  }
+    .title {
+      text-align: center;
+    }
   
   }
   
@@ -72,8 +72,7 @@
     font-family: Lato, sans-serif;
     cursor: pointer;
   }
-  
-  
+    
   .tasks__button-task:hover,
   .tasks__button-task_edit:hover,
   .tasks__button-task_delete:hover {
